@@ -1,0 +1,6 @@
+E:\ConsoleApplication1\Ejercicio 1\bin\Debug\Ejercicio 1.exe.config
+E:\ConsoleApplication1\Ejercicio 1\bin\Debug\Ejercicio 1.exe
+E:\ConsoleApplication1\Ejercicio 1\bin\Debug\Ejercicio 1.pdb
+E:\ConsoleApplication1\Ejercicio 1\obj\Debug\Ejercicio 1.exe
+E:\ConsoleApplication1\Ejercicio 1\obj\Debug\Ejercicio 1.pdb
+E:\ConsoleApplication1\Ejercicio 1\obj\Debug\Ejercicio 1.csprojResolveAssemblyReference.cache

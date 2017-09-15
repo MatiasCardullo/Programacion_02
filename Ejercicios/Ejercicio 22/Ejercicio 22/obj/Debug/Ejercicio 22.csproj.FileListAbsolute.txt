@@ -1,0 +1,6 @@
+E:\Programacion_02\Ejercicios\Ejercicio 22\Ejercicio 22\bin\Debug\Ejercicio 22.exe.config
+E:\Programacion_02\Ejercicios\Ejercicio 22\Ejercicio 22\bin\Debug\Ejercicio 22.exe
+E:\Programacion_02\Ejercicios\Ejercicio 22\Ejercicio 22\bin\Debug\Ejercicio 22.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 22\Ejercicio 22\obj\Debug\Ejercicio 22.csprojResolveAssemblyReference.cache
+E:\Programacion_02\Ejercicios\Ejercicio 22\Ejercicio 22\obj\Debug\Ejercicio 22.exe
+E:\Programacion_02\Ejercicios\Ejercicio 22\Ejercicio 22\obj\Debug\Ejercicio 22.pdb

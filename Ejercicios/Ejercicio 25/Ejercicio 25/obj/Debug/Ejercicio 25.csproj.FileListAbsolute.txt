@@ -1,0 +1,11 @@
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\bin\Debug\Ejercicio 25.exe.config
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\bin\Debug\Ejercicio 25.exe
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\bin\Debug\Ejercicio 25.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\bin\Debug\Ejercicio 13.exe
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\bin\Debug\Ejercicio 13.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\obj\Debug\Ejercicio 25.csprojResolveAssemblyReference.cache
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\obj\Debug\Ejercicio_25.Form1.resources
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\obj\Debug\Ejercicio_25.Properties.Resources.resources
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\obj\Debug\Ejercicio 25.csproj.GenerateResource.Cache
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\obj\Debug\Ejercicio 25.exe
+E:\Programacion_02\Ejercicios\Ejercicio 25\Ejercicio 25\obj\Debug\Ejercicio 25.pdb

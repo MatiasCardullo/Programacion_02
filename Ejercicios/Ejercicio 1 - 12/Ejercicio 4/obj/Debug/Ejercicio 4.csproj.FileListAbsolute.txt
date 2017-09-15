@@ -1,0 +1,11 @@
+E:\ConsoleApplication1\Ejercicio 4\bin\Debug\Ejercicio 4.exe.config
+E:\ConsoleApplication1\Ejercicio 4\bin\Debug\Ejercicio 4.exe
+E:\ConsoleApplication1\Ejercicio 4\bin\Debug\Ejercicio 4.pdb
+E:\ConsoleApplication1\Ejercicio 4\obj\Debug\Ejercicio 4.exe
+E:\ConsoleApplication1\Ejercicio 4\obj\Debug\Ejercicio 4.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 4\bin\Debug\Ejercicio 4.exe.config
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 4\bin\Debug\Ejercicio 4.exe
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 4\bin\Debug\Ejercicio 4.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 4\obj\Debug\Ejercicio 4.csprojResolveAssemblyReference.cache
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 4\obj\Debug\Ejercicio 4.exe
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 4\obj\Debug\Ejercicio 4.pdb

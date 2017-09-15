@@ -1,0 +1,6 @@
+E:\Programacion_02\Ejercicios\Ejercicio 26\Ejercicio 26\bin\Debug\Ejercicio 26.exe.config
+E:\Programacion_02\Ejercicios\Ejercicio 26\Ejercicio 26\obj\Debug\Ejercicio 26.csprojResolveAssemblyReference.cache
+E:\Programacion_02\Ejercicios\Ejercicio 26\Ejercicio 26\bin\Debug\Ejercicio 26.exe
+E:\Programacion_02\Ejercicios\Ejercicio 26\Ejercicio 26\bin\Debug\Ejercicio 26.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 26\Ejercicio 26\obj\Debug\Ejercicio 26.exe
+E:\Programacion_02\Ejercicios\Ejercicio 26\Ejercicio 26\obj\Debug\Ejercicio 26.pdb

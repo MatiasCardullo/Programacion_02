@@ -1,0 +1,12 @@
+E:\ConsoleApplication1\Ejercicio 5\bin\Debug\Ejercicio 5.exe.config
+E:\ConsoleApplication1\Ejercicio 5\bin\Debug\Ejercicio 5.exe
+E:\ConsoleApplication1\Ejercicio 5\bin\Debug\Ejercicio 5.pdb
+E:\ConsoleApplication1\Ejercicio 5\obj\Debug\Ejercicio 5.csprojResolveAssemblyReference.cache
+E:\ConsoleApplication1\Ejercicio 5\obj\Debug\Ejercicio 5.exe
+E:\ConsoleApplication1\Ejercicio 5\obj\Debug\Ejercicio 5.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 5\bin\Debug\Ejercicio 5.exe.config
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 5\bin\Debug\Ejercicio 5.exe
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 5\bin\Debug\Ejercicio 5.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 5\obj\Debug\Ejercicio 5.csprojResolveAssemblyReference.cache
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 5\obj\Debug\Ejercicio 5.exe
+E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 5\obj\Debug\Ejercicio 5.pdb

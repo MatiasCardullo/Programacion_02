@@ -1,0 +1,9 @@
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\bin\Debug\Ejercicio 28.exe.config
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\bin\Debug\Ejercicio 28.exe
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\bin\Debug\Ejercicio 28.pdb
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\obj\Debug\Ejercicio 28.csprojResolveAssemblyReference.cache
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\obj\Debug\Ejercicio_28.Form1.resources
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\obj\Debug\Ejercicio_28.Properties.Resources.resources
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\obj\Debug\Ejercicio 28.csproj.GenerateResource.Cache
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\obj\Debug\Ejercicio 28.exe
+E:\Programacion_02\Ejercicios\Ejercicio 28\Ejercicio 28\obj\Debug\Ejercicio 28.pdb
