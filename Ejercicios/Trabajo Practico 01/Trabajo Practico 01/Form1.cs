@@ -42,5 +42,6 @@ namespace Trabajo_Practico_01
             txtNumero2.Text = "";
             cmbOperacion.SelectedIndex = 0;
         }
+
     }
 }

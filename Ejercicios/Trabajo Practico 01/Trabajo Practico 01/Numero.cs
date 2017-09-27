@@ -19,7 +19,10 @@ namespace Trabajo_Practico_01
             this.numero = 0;
         }
 
-        //Constructor recibe un double y carga en el atributo numero.
+        /// <summary>
+        /// Constructor recibe un double y carga en el atributo numero.
+        /// </summary>
+        /// <param name="numero"></param>
         public Numero(double numero)
         {
             this.numero = numero;
@@ -34,6 +37,11 @@ namespace Trabajo_Practico_01
 
         #region Métodos
         //Método valida que se trate de un double válido, caso contrario retorna 0.
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="numeroString"></param>
+        /// <returns></returns>
         private static double validarNumero(string numeroString)
         {
             double retorno = 0;
