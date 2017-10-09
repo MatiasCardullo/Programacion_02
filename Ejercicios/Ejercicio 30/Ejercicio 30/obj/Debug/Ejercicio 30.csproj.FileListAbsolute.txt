@@ -1,6 +1,0 @@
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 30\Ejercicio 30\bin\Debug\Ejercicio 30.exe.config
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 30\Ejercicio 30\bin\Debug\Ejercicio 30.exe
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 30\Ejercicio 30\bin\Debug\Ejercicio 30.pdb
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 30\Ejercicio 30\obj\Debug\Ejercicio 30.csprojResolveAssemblyReference.cache
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 30\Ejercicio 30\obj\Debug\Ejercicio 30.exe
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 30\Ejercicio 30\obj\Debug\Ejercicio 30.pdb

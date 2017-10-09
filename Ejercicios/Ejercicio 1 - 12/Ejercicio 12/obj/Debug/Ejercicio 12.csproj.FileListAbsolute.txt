@@ -1,6 +1,0 @@
-E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 12\bin\Debug\Ejercicio 12.exe.config
-E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 12\bin\Debug\Ejercicio 12.exe
-E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 12\bin\Debug\Ejercicio 12.pdb
-E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 12\obj\Debug\Ejercicio 12.csprojResolveAssemblyReference.cache
-E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 12\obj\Debug\Ejercicio 12.exe
-E:\Programacion_02\Ejercicios\Ejercicio 1 - 12\Ejercicio 12\obj\Debug\Ejercicio 12.pdb

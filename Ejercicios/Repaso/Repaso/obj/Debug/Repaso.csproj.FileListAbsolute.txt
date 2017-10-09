@@ -1,7 +1,0 @@
-D:\VisualStudio\Repaso\Repaso\bin\Debug\Repaso.exe.config
-E:\Programacion_02\Ejercicios\Repaso\Repaso\bin\Debug\Repaso.exe.config
-E:\Programacion_02\Ejercicios\Repaso\Repaso\obj\Debug\Repaso.csprojResolveAssemblyReference.cache
-E:\Programacion_02\Ejercicios\Repaso\Repaso\bin\Debug\Repaso.exe
-E:\Programacion_02\Ejercicios\Repaso\Repaso\bin\Debug\Repaso.pdb
-E:\Programacion_02\Ejercicios\Repaso\Repaso\obj\Debug\Repaso.exe
-E:\Programacion_02\Ejercicios\Repaso\Repaso\obj\Debug\Repaso.pdb

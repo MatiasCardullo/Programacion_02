@@ -1,6 +1,0 @@
-E:\Programacion_02\Ejercicios\Ejercicio 27\Ejercicio 27\bin\Debug\Ejercicio 27.exe.config
-E:\Programacion_02\Ejercicios\Ejercicio 27\Ejercicio 27\bin\Debug\Ejercicio 27.exe
-E:\Programacion_02\Ejercicios\Ejercicio 27\Ejercicio 27\bin\Debug\Ejercicio 27.pdb
-E:\Programacion_02\Ejercicios\Ejercicio 27\Ejercicio 27\obj\Debug\Ejercicio 27.csprojResolveAssemblyReference.cache
-E:\Programacion_02\Ejercicios\Ejercicio 27\Ejercicio 27\obj\Debug\Ejercicio 27.exe
-E:\Programacion_02\Ejercicios\Ejercicio 27\Ejercicio 27\obj\Debug\Ejercicio 27.pdb

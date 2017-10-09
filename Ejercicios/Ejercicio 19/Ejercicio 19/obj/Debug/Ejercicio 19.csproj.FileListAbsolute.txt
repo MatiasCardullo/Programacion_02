@@ -1,6 +1,0 @@
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 19\Ejercicio 19\bin\Debug\Ejercicio 19.exe.config
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 19\Ejercicio 19\bin\Debug\Ejercicio 19.exe
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 19\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 19\Ejercicio 19\obj\Debug\Ejercicio 19.csprojResolveAssemblyReference.cache
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 19\Ejercicio 19\obj\Debug\Ejercicio 19.exe
-c:\users\kima\documents\visual studio 2017\Projects\Ejercicio 19\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
