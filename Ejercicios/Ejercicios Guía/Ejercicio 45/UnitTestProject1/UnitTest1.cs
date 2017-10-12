@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ejercicio_30;
+using Ejercicio_42;
 
 namespace UnitTestProject1
 {
@@ -8,66 +8,62 @@ namespace UnitTestProject1
     public class UnitTest1
     {
         [TestMethod]
-        public void Validar_Si_Lista_Esta_Instanciada()
+        public void TestMetodoEstatico()
         {
-            Competencia c1 = new Competencia(5, 10, Competencia.TipoCompetencia.F1);
-            Assert.IsNotNull(c1.Competidores);
-        }
-
-        [TestMethod]
-        public void Se_Lance_Competencia_No_Disponible()
-        {
-            Competencia c1 = new Competencia(15, 3, Competencia.TipoCompetencia.MotoCross);
-            AutoF1 a1 = new AutoF1(1, "Mercedes");
-
             try
             {
-                bool aux = c1 + a1;
-                Assert.Fail(); //Si llegó a esta linea NO se lanzó la excepción. 
-            }
-            catch(Exception e)
-            {
-                Assert.IsInstanceOfType(e, typeof(CompetenciaNoDisponibleException));
-            }
-        }
-
-        [TestMethod]
-        public void No_Se_Lance_Competencia_No_Disponible()
-        {
-            Competencia c1 = new Competencia(15, 3, Competencia.TipoCompetencia.MotoCross);
-            MotoCross m1 = new MotoCross(4, "escuderia");
-
-            try
-            {
-                bool aux = c1 + m1;
+                Excepcion.MetodoEstatico();
+                Assert.Fail(); //Si llega acá no lanzò la excepción y està mal.              
             }
             catch (Exception e)
             {
-                Assert.IsInstanceOfType(e, typeof(CompetenciaNoDisponibleException));
-                Assert.Fail(); //Si llegó a esta línea se lanzó la excepción.  
+                Assert.IsInstanceOfType(e, typeof(DivideByZeroException)); //Debe ser divide by zero. 
             }
         }
 
         [TestMethod]
-        public void Se_Cargue_Vehiculo_A_Lista()
+        public void TestConstructorExcepcion1()
         {
-            Competencia c1 = new Competencia(15, 3, Competencia.TipoCompetencia.MotoCross);
-            MotoCross m1 = new MotoCross(4, "escuderia");
-            if (c1 + m1)
+            try
             {
-                Assert.IsTrue(c1 == m1);
+                Excepcion objeto = new Excepcion();
+                Assert.Fail(); //Si llega acá no lanzò la excepción y està mal.              
+            }
+            catch (Exception e)
+            {
+                Assert.IsInstanceOfType(e, typeof(DivideByZeroException)); //Debe ser divide by zero. 
             }
         }
 
         [TestMethod]
-        public void Se_Quite_Vehiculo_De_Lista()
+        public void TestConstructorExcepcion2()
         {
-            Competencia c1 = new Competencia(15, 3, Competencia.TipoCompetencia.MotoCross);
-            MotoCross m1 = new MotoCross(4, "escuderia");
-            bool aux = c1 + m1;
-            if(c1 - m1)
+            try
             {
-                Assert.IsTrue(c1 != m1);
+                Excepcion objeto = new Excepcion(0);
+                Assert.Fail(); //Si llega acá no lanzò la excepción y està mal.              
+            }
+            catch (Exception e)
+            {
+                Assert.IsInstanceOfType(e, typeof(UnaException)); //Debe ser UnaException 
+                Assert.IsInstanceOfType(e.InnerException, typeof(DivideByZeroException)); //Debe tener como innerException DivideByZero
+            }
+        }
+
+        [TestMethod]
+        public void MetodoInstanciaOtraClase()
+        {
+            OtraClase objeto = new OtraClase();
+            try
+            {
+                objeto.MetodoInstancia();
+                Assert.Fail(); //Si llega acá no lanzò la excepción y està mal.              
+            }
+            catch (Exception e)
+            {
+                Assert.IsInstanceOfType(e, typeof(MiException)); //Debe ser MiException
+                Assert.IsInstanceOfType(e.InnerException, typeof(UnaException)); //Primer InnerException Debe ser UnaException 
+                Assert.IsInstanceOfType(e.InnerException.InnerException, typeof(DivideByZeroException)); //Segundo innerException DivideByZero
             }
         }
 
