@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Ejercicio_37
 {
@@ -28,10 +29,11 @@ namespace Ejercicio_37
                 this.rutaDeArchivo = value;
             }
         }
-
+        
         public Centralita() 
         {        
             this.listaDeLlamadas = new List<Llamada>();
+            this.RutaDeArchivo = "bitacora.txt";
         }
 
         public Centralita(string nombreEmpresa)
@@ -133,6 +135,10 @@ namespace Ejercicio_37
             if (c != nuevaLlamada)
             {
                 c.AgregarLlamada(nuevaLlamada);
+                if (c.Guardar() == false)
+                {
+                    throw new FallaLogException("No se pudo guardar.","Centralita","Operator +");
+                }
             }
             else 
             {
@@ -143,12 +149,25 @@ namespace Ejercicio_37
 
         public bool Guardar()
         {
+            try
+            {
+                StreamWriter file = new StreamWriter(this.RutaDeArchivo);
+                file.WriteLine(this.Mostrar());
+                file.Close();
+            }
+            catch(Exception e)
+            {
+                return false;
+            }
             return true;
         }
 
         public string Leer()
         {
-            throw new NotImplementedException();        
+            StreamReader file = new StreamReader(this.RutaDeArchivo);
+            string retorno = file.ReadToEnd();
+            file.Close();
+            return retorno;
         }
 
     }
