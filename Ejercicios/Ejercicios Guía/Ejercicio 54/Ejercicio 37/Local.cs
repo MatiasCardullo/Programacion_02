@@ -8,10 +8,20 @@ namespace Ejercicio_37
 {
     public class Local:Llamada,IGuardar<string>
     {
+        #region Atributos
         protected float _costo;
         private string rutaDeArchivo;
+        #endregion
 
-        public override float CostoLlamada { get { return this.CalcularCosto(); } }
+        #region Propiedades
+        public override float CostoLlamada 
+        { 
+            get 
+            {
+                return this.CalcularCosto();
+            } 
+        }
+
         public string RutaDeArchivo
         {
             get
@@ -23,7 +33,9 @@ namespace Ejercicio_37
                 this.rutaDeArchivo = value;
             }
         }
+        #endregion
 
+        #region Constructores
         public Local(Llamada llamada, float costo) :this(llamada.NroOrigen,llamada.Duracion,llamada.NroDestino,costo)
         {
         }
@@ -32,7 +44,9 @@ namespace Ejercicio_37
         {
             this._costo = costo;
         }
+        #endregion
 
+        #region Métodos
         protected override string Mostrar()
         {
             StringBuilder salida = new StringBuilder();
@@ -67,5 +81,6 @@ namespace Ejercicio_37
         {
             throw new NotImplementedException();
         }
+        #endregion
     }
 }

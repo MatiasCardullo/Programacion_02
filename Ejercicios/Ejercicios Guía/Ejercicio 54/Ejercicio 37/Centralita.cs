@@ -9,15 +9,45 @@ namespace Ejercicio_37
 {
     public class Centralita : IGuardar<string>
     {
+        #region Atributos
         private List<Llamada> listaDeLlamadas;
         protected string razonSocial;
         private string rutaDeArchivo;
+        #endregion
 
+        #region Propiedades
+        public float GananciasPorLocal 
+        { 
+            get 
+            { 
+                return this.CalcularGanancia(Llamada.TipoLlamada.Local); 
+            } 
+        }
 
-        public float GananciasPorLocal { get { return this.CalcularGanancia(Llamada.TipoLlamada.Local); } }
-        public float GananciasPorProvincial { get { return this.CalcularGanancia(Llamada.TipoLlamada.Provincial); } }
-        public float GananciasPorTotal { get { return this.CalcularGanancia(Llamada.TipoLlamada.Todas); } }
-        public List<Llamada> Llamadas { get { return this.listaDeLlamadas; } }
+        public float GananciasPorProvincial 
+        { 
+            get 
+            { 
+                return this.CalcularGanancia(Llamada.TipoLlamada.Provincial); 
+            } 
+        }
+
+        public float GananciasPorTotal 
+        { 
+            get 
+            { 
+                return this.CalcularGanancia(Llamada.TipoLlamada.Todas); 
+            } 
+        }
+
+        public List<Llamada> Llamadas 
+        {
+            get 
+            {
+                return this.listaDeLlamadas; 
+            }
+        }
+
         public string RutaDeArchivo
         {
             get
@@ -29,7 +59,9 @@ namespace Ejercicio_37
                 this.rutaDeArchivo = value;
             }
         }
-        
+        #endregion
+
+        #region Constructores
         public Centralita() 
         {        
             this.listaDeLlamadas = new List<Llamada>();
@@ -41,7 +73,47 @@ namespace Ejercicio_37
         {
             this.razonSocial = nombreEmpresa;
         }
+        #endregion
 
+        #region Sobrecargas
+        public static bool operator ==(Centralita c, Llamada llamada)
+        {
+            bool retorno = false;
+            foreach (Llamada l in c.listaDeLlamadas)
+            {
+                if (l == llamada)
+                {
+                    retorno = true;
+                    break;
+                }
+            }
+            return retorno;
+        }
+
+        public static bool operator !=(Centralita c, Llamada llamada)
+        {
+            return !(c == llamada);
+        }
+
+        public static Centralita operator +(Centralita c, Llamada nuevaLlamada)
+        {
+            if (c != nuevaLlamada)
+            {
+                c.AgregarLlamada(nuevaLlamada);
+                if (c.Guardar() == false)
+                {
+                    throw new FallaLogException("No se pudo guardar.", "Centralita", "Operator +");
+                }
+            }
+            else
+            {
+                throw new CentralitaException("Ya existe la llamada", c.GetType().Name, "Operator +");
+            }
+            return c;
+        }
+        #endregion
+
+        #region Métodos
         private string Mostrar()
         {
             StringBuilder salida = new StringBuilder();
@@ -111,42 +183,6 @@ namespace Ejercicio_37
             this.listaDeLlamadas.Add(nuevaLlamada);        
         }
 
-        public static bool operator ==(Centralita c, Llamada llamada)
-        {
-            bool retorno = false;
-            foreach (Llamada l in c.listaDeLlamadas)
-            {
-                if(l == llamada)
-                {
-                    retorno = true;
-                    break;
-                }
-            }
-            return retorno;
-        }
-
-        public static bool operator !=(Centralita c, Llamada llamada)
-        {
-            return !(c == llamada);
-        }
-
-        public static Centralita operator +(Centralita c, Llamada nuevaLlamada)
-        {
-            if (c != nuevaLlamada)
-            {
-                c.AgregarLlamada(nuevaLlamada);
-                if (c.Guardar() == false)
-                {
-                    throw new FallaLogException("No se pudo guardar.","Centralita","Operator +");
-                }
-            }
-            else 
-            {
-                throw new CentralitaException("Ya existe la llamada", c.GetType().Name, "Operator +");
-            }
-            return c;
-        }
-
         public bool Guardar()
         {
             try
@@ -155,10 +191,11 @@ namespace Ejercicio_37
                 file.WriteLine(this.Mostrar());
                 file.Close();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 return false;
             }
+
             return true;
         }
 
@@ -169,6 +206,6 @@ namespace Ejercicio_37
             file.Close();
             return retorno;
         }
-
+        #endregion       
     }
 }
