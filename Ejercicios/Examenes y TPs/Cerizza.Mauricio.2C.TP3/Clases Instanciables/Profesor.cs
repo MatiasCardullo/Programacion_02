@@ -11,25 +11,8 @@ namespace Clases_Instanciables
     public sealed class Profesor : Universitario
     {
         #region Atributos
-        private List<Universidad.EClases> _clasesDelDia; //No se puede serializar una cola(No tiene constructor por defecto), así que usé una lista. 
+        private Queue<Universidad.EClases> _clasesDelDia; 
         private static Random _random;
-        #endregion
-
-        #region Propiedades
-        /// <summary>
-        /// Obtiene una lista con las clases que da el profesor.
-        /// </summary>
-        public List<Universidad.EClases> ClasesDelDía
-        {
-            get
-            {
-                return this._clasesDelDia;
-            }
-            set
-            {
-                this._clasesDelDia = value;               
-            }
-        }
         #endregion
 
         #region Constructores
@@ -61,7 +44,7 @@ namespace Clases_Instanciables
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id, nombre, apellido, dni, nacionalidad)
         {
-            this._clasesDelDia = new List<Universidad.EClases>();
+            this._clasesDelDia = new Queue<Universidad.EClases>();
             this._randomClases(); //Asigna dos clases al azar a la lista de clases del profesor. 
         }
         #endregion
@@ -105,8 +88,8 @@ namespace Clases_Instanciables
         /// </summary>
         private void _randomClases()
         {
-            this._clasesDelDia.Add((Universidad.EClases)Profesor._random.Next(0, 4));
-            this._clasesDelDia.Add((Universidad.EClases)Profesor._random.Next(0, 4));
+            this._clasesDelDia.Enqueue((Universidad.EClases)Profesor._random.Next(0, 4));
+            this._clasesDelDia.Enqueue((Universidad.EClases)Profesor._random.Next(0, 4));
         }
 
         /// <summary>
@@ -117,9 +100,12 @@ namespace Clases_Instanciables
         {
             StringBuilder clases = new StringBuilder();
             clases.AppendLine("CLASES DEL DÍA:");
-            foreach (Universidad.EClases c in this._clasesDelDia)
+            if (!object.ReferenceEquals(this._clasesDelDia, null))
             {
-                clases.AppendFormat("{0}\n", c);
+                foreach (Universidad.EClases c in this._clasesDelDia)
+                {
+                    clases.AppendFormat("{0}\n", c);
+                }
             }
             return clases.ToString();
         }

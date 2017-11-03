@@ -153,7 +153,7 @@ namespace Clases_Instanciables
         {
             foreach(Profesor p in g.Profesores)
             {
-                if(p.ClasesDelDía.Contains(clase))
+                if(p == clase) //Será igual si el profesor da la clase
                 {
                     return p;
                 }
@@ -172,7 +172,7 @@ namespace Clases_Instanciables
         {
             foreach (Profesor p in g.Profesores)
             {
-                if (!(p.ClasesDelDía.Contains(clase)))
+                if (p != clase) //Será distinto si el profesor no da la clase.
                 {
                     return p;
                 }
@@ -234,7 +234,7 @@ namespace Clases_Instanciables
             Jornada jornada = new Jornada(clase, g == clase);
             foreach(Alumno alumno in g.Alumnos) //Por cada alumno inscripto en la universidad...
             {
-                if(alumno.ClaseQueToma == clase) //Si toma esa clase...
+                if(alumno == clase) //Será igual si toma esa clase y no es deudor...
                 {
                     jornada.Alumnos.Add(alumno); //Lo agrega a lista de alumnos de la clase...
                 }                

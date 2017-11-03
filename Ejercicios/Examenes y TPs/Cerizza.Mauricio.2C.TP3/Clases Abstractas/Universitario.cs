@@ -12,23 +12,6 @@ namespace Clases_Abstractas
         private int legajo;
         #endregion
 
-        #region Propiedades
-        /// <summary>
-        /// Obtiene/Establece el legajo. 
-        /// </summary>
-        public int Legajo
-        {
-            get
-            {
-                return this.legajo;
-            }
-            set
-            {
-                this.legajo = value;
-            }
-        }
-        #endregion
-
         #region Constructores
         /// <summary>
         /// Constructor público por defecto. 

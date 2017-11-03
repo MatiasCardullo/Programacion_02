@@ -16,22 +16,6 @@ namespace Clases_Instanciables
         private EEstadoCuenta _estadoCuenta;
         #endregion
 
-        #region Propiedades
-        /// <summary>
-        /// Obtiene/Establece la clase que toma el alumno.
-        /// </summary>
-        public Universidad.EClases ClaseQueToma {
-            get
-            {
-                return this._claseQueToma;
-            }
-            set
-            {
-                this._claseQueToma = value;
-            }
-        }
-        #endregion
-
         #region Constructores
         /// <summary>
         /// Constructor por defecto.
@@ -53,7 +37,7 @@ namespace Clases_Instanciables
         public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Universidad.EClases claseQueToma)
             :base(id,nombre,apellido,dni,nacionalidad)
         {
-            this.ClaseQueToma = claseQueToma;
+            this._claseQueToma = claseQueToma;
         }
 
         /// <summary>

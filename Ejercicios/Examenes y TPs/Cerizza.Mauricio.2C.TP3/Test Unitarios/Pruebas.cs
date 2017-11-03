@@ -20,20 +20,7 @@ namespace Test_Unitarios
             //Genero una universidad.
             Universidad u = new Universidad();
 
-            //Genero dos profesores y los agrego a la lista de la universidad.
-            Profesor p1 = new Profesor(1, "Federico", "Davila", "12.345.678", Persona.ENacionalidad.Argentino);
-            Profesor p2 = new Profesor(2, "Mauricio", "Davila", "87.654.321", Persona.ENacionalidad.Argentino);
-            u += p1;
-            u += p2;
-
-            //Le asigno a los profesores la lista de materias que dan.
-            List<Universidad.EClases> listaDeMaterias = new List<Universidad.EClases>();
-            listaDeMaterias.Add(Universidad.EClases.Laboratorio);
-            listaDeMaterias.Add(Universidad.EClases.Programacion);
-            //En este momento la listaDeMaterias solo tiene Laboratorio y Programación. 
-            //Por lo tanto los profesores sólo darán esas materias.
-            p1.ClasesDelDía = listaDeMaterias;
-            p2.ClasesDelDía = listaDeMaterias;
+            //No hay profesores cargados, por lo tanto debería lanzar sinProfesorException
 
             //Genero una nueva jornada de la clase de Legislación.
             try
@@ -179,14 +166,14 @@ namespace Test_Unitarios
         }
 
         /// <summary>
-        /// Testea que al generar un profesor, su atributo clasesDelDia no sea NULL.
+        /// Testea que al generar una jornada, su atributo _alumnos no sea NULL.
         /// </summary>
         [TestMethod]
-        public void TestClasesDelDiaNoEsNull()
+        public void TestJornadaAlumnosNoEsNull()
         {
-            Profesor p1 = new Profesor(1, "Federico", "Davila", "12.345.678", Persona.ENacionalidad.Argentino);
+            Jornada j = new Jornada();
 
-            Assert.IsNotNull(p1.ClasesDelDía);
+            Assert.IsNotNull(j.Alumnos);
         }
     }
 }

@@ -158,7 +158,8 @@ namespace Clases_Instanciables
         public static string Leer()
         {
             Texto aux = new Texto();
-            if (aux.Leer("Jornada.txt", out string datos) == false)
+            string datos;
+            if (aux.Leer("Jornada.txt", out datos) == false)
             { //Si no se pudo leer, lanza una excepción. 
                 throw new ArchivosException("No se pudo leer el archivo.");
             }
