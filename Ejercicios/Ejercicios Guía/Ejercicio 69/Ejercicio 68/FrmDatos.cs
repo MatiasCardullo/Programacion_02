@@ -23,5 +23,11 @@ namespace Ejercicio_68
         {
             label1.Text = valor;
         }
+
+        public void ActualizarFoto(string valor)
+        {
+            pictureBox1.ImageLocation = valor;
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
     }
 }

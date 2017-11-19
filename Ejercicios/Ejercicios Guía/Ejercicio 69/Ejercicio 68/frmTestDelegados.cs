@@ -14,10 +14,15 @@ namespace Ejercicio_68
     {
         public delegate void Delegado(string a);
         public event Delegado actualizado;
+        public event Delegado fotoActualizada;
+
+        private string ruta;
 
         public frmTestDelegados()
         {
             InitializeComponent();
+            ruta = "";
+            openFileDialog1.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -25,6 +30,7 @@ namespace Ejercicio_68
             try
             {
                 this.actualizado(textBox1.Text);
+                this.fotoActualizada(ruta);
             }
             catch (NullReferenceException)
             {
@@ -33,6 +39,10 @@ namespace Ejercicio_68
                        
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            ruta = openFileDialog1.FileName;
+        }
     }
 }

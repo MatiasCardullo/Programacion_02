@@ -35,6 +35,7 @@ namespace Ejercicio_68
             try
             {
                 formTestDelegados.actualizado += formDatos.ActualizarNombre;
+                formTestDelegados.fotoActualizada += formDatos.ActualizarFoto;
             }
             catch (NullReferenceException)
             {
