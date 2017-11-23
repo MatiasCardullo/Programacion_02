@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Archivos
 {
@@ -31,21 +32,13 @@ namespace Archivos
         /// <returns>Devuelve true si se guardó correctamente.</returns>
         public bool guardar(string datos)
         {
-            FileStream fs = null;
+            StreamWriter sw = null;
             bool retorno = false;
-            string datosAux = "";
+
             try
             {
-                fs = new FileStream(this.archivo, FileMode.OpenOrCreate);
-                //Tuve que crear mi propio "Append" porque el de FileStream por alguna razón no funciona.
-                BinaryFormatter bf = new BinaryFormatter();
-                if(fs.Length != 0) //Si no es cero deserializo todo el contenido en datosAux.
-                    datosAux = bf.Deserialize(fs).ToString();
-                fs.Close(); //Cierro el stream.
-
-                string texto = String.Format(datosAux + datos); //Sumo al historial (datosAux) una nueva pagina (datos) 
-                fs = new FileStream(this.archivo, FileMode.Create); //Lo vuelvo a abrir para serializar los datos.
-                bf.Serialize(fs, texto);
+                sw = new StreamWriter(this.archivo, true);
+                sw.WriteLine(datos);
                 retorno = true;
             }
             catch (Exception e)
@@ -54,7 +47,7 @@ namespace Archivos
             }
             finally
             {
-                fs.Close();
+                sw.Close();
             }
 
             return retorno;
@@ -67,34 +60,23 @@ namespace Archivos
         /// <returns>Devuelve true si se leyó correctamente.</returns>
         public bool leer(out List<string> datos)
         {
-            FileStream fs = null;
+            StreamReader sr = null;
             bool retorno = false;
             datos = new List<string>();
             string datosAux = "";
-
             try
             {
-                fs = new FileStream(this.archivo, FileMode.OpenOrCreate);
-                if (fs.Length != 0) //Si no está vacío.
+                sr = new StreamReader(this.archivo);
+
+                while ((datosAux = sr.ReadLine()) != null)
                 {
-                    BinaryFormatter bf = new BinaryFormatter();
-                    datosAux = (string)bf.Deserialize(fs); //Deserializo todo el bloque de texto.
-                    StringReader reader = new StringReader(datosAux);
-                    string line;
-                    while (true)
-                    {
-                        line = reader.ReadLine(); //Voy leyendo línea por línea.
-                        if (line != null) //Si no es null...
-                        {
-                            datos.Add(reader.ReadLine()); //Agrego a la lista de datos.
-                        }
-                        else
-                        {
-                            break; //Si es null salgo del bucle while.
-                        }
-                    }
+                    datos.Add(datosAux);
                 }
-                
+
+                retorno = true;
+            }
+            catch (FileNotFoundException)
+            {
                 retorno = true;
             }
             catch (Exception e)
@@ -103,7 +85,8 @@ namespace Archivos
             }
             finally
             {
-                fs.Close();
+                if(sr != null)
+                    sr.Close();
             }
 
             return retorno;

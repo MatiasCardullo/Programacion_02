@@ -73,7 +73,7 @@ namespace Entidades
 
         public void RespuestaHilo(int id)
         {
-            string mensaje = String.Format("Terminó el hilo {0}", this.id);
+            string mensaje = String.Format("Terminó el hilo {0}", id);
             this.Bitacora = mensaje;
             AvisoFin(mensaje);
         }

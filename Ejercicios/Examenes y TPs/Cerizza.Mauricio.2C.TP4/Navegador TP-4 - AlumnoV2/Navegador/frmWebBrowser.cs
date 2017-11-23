@@ -105,7 +105,7 @@ namespace Navegador
             Archivos.Texto archivo = new Archivos.Texto(frmHistorial.ARCHIVO_HISTORIAL);
             try
             {
-                archivo.guardar(txtUrl.Text + "\n");
+                archivo.guardar(txtUrl.Text);
             }
             catch (Exception ex)
             {

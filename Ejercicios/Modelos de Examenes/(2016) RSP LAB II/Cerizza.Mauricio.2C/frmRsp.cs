@@ -54,7 +54,7 @@ namespace Cerizza.Mauricio._2C
             corredor.Guardar("Ganadores");
             MessageBox.Show("HAY UN GANADOR: "+ corredor.ToString());
             LimpiarCarriles();
-            //btnCorrer.Enabled = true;
+            btnCorrer.Enabled = true;
         }
 
         private void LimpiarCarriles()
@@ -85,8 +85,10 @@ namespace Cerizza.Mauricio._2C
         
         private void btnCorrer_Click(object sender, EventArgs e)
         {
+            this._hayGanador = false;
             Thread c1 = new Thread(this._corredores[0].Correr);
             Thread c2 = new Thread(this._corredores[1].Correr);
+            this._corredoresActivos.Clear();
             this._corredoresActivos.Add(c1);
             this._corredoresActivos.Add(c2);
 

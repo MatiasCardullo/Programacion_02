@@ -82,6 +82,10 @@
       <Project>{c218a5a6-77ae-4ed5-892b-02ffbaca349f}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{17afafba-174f-40bf-93d5-0245d819bea6}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

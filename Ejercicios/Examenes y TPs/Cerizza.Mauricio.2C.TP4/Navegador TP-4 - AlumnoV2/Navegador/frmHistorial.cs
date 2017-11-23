@@ -27,9 +27,8 @@ namespace Navegador
             {
                 archivos.leer(out datos);
                 foreach (string dato in datos)
-                {                    
-                    if(dato != null)
-                        lstHistorial.Items.Add(dato);
+                {
+                    lstHistorial.Items.Add(dato);
                 }                              
             }
             catch (Exception ex)
